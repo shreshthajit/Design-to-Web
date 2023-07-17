@@ -1,0 +1,42 @@
+.container{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.columns {
+  width: 100%;
+  padding-top: 50px;
+}
+.column {
+  width: 100%;
+  .pHeadline {
+    font-size: 50px;
+    font-weight: 900;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+ 
+  .chooseBtn{
+    padding-top: 30px;
+  }
+  .second-col{
+    padding-left: 100px;
+  }
+  
+
+}
+@media (min-width: 48em) {
+  .column {
+    width: 50%;
+    float: left;
+  }
+  .columns {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
